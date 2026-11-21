@@ -5,8 +5,8 @@
 Welcome to my personal portfolio. I'm an IT professional and final-year B.A.S. Information Technology student at Ensign College. I work on AI evaluation, cloud technology and education technology, and my mission is **"Using technology to serve the one"** (Luke 15:4–7).
 
 ## About Me
-- **IT Manager** at Golden Touch College
 - **Founder** of CloudCity Technology and Education, where I teach young people Python, data science and machine learning
+- **Former IT Manager** at Golden Touch College
 - **B.A.S. Information Technology**, Ensign College (expected August 2027)
 - Team lead in **TRI AI Saturdays, Cohort 10**
 - Completed **Google DeepMind AI Research Foundations**, **NASA ARSET** and **Climate Change AI** training
