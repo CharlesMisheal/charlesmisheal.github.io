@@ -8,6 +8,7 @@ Welcome to my personal portfolio. I'm an IT professional and final-year B.A.S. I
 - **Founder** of CloudCity Technology and Education, where I teach young people Python, data science and machine learning
 - **Former IT Manager** at Golden Touch College
 - **B.A.S. Information Technology**, Ensign College (expected August 2027)
+- **Certified Kubernetes Administrator (CKA)**
 - Team lead in **TRI AI Saturdays, Cohort 10**
 - Completed **Google DeepMind AI Research Foundations**, **NASA ARSET** and **Climate Change AI** training
 
@@ -20,19 +21,19 @@ I study whether AI systems are reliable and trustworthy, especially whether lang
 | **Bravick** | An offline-first school management and computer-based testing platform for West African schools (React + Vite, Node/Express, SQLite, Electron). |
 | **Evidence-Following in RAG** | A published benchmark measuring whether LLMs follow retrieved evidence. [DOI: 10.5281/zenodo.22151237](https://doi.org/10.5281/zenodo.22151237) |
 | **Agricultural Document Retrieval Pipeline** | A team-led retrieval system that raised nDCG@5 from 0.49 to 0.74. [Repository](https://github.com/CharlesMisheal/C10-team-chobe) |
-| **Azure Lab** *(coming soon)* | Hands-on cloud administration work from my AZ-104 preparation. |
-| **Computer Vision Project** *(coming soon)* | A beginner computer vision project in Python. |
 
 ## Skills
 - **Programming:** Python, TypeScript, SQL
-- **Cloud:** Microsoft Azure, AWS
+- **Web and Desktop:** React, Vite, Node.js/Express, SQLite, Electron
+- **Cloud and DevOps:** Kubernetes (CKA), Docker, Linux, Microsoft Azure, AWS
 - **Networking:** LAN/VLAN configuration
 - **AI/ML:** Retrieval-augmented generation, LLM evaluation, embeddings, data science
 - **Quality Assurance:** Bug finding, reproduction and documentation (HNG Internship, Cohort 15)
 
 ## Site Pages
-- **Home:** About me, mission and skills
-- **Projects:** My work, each with a "Faith in Practice" note
+- **Home:** Introduction, mission and skills
+- **Résumé:** My résumé, with a downloadable PDF
+- **Projects:** Three detailed project write-ups covering context, challenges, results, lessons learned and faith in practice
 - **Guiding Principles:** The three principles that guide my spiritual and professional growth
 - **Reflections:** Regular posts connecting faith and technology
 - **Growth:** My goals and progress
@@ -42,6 +43,7 @@ Plain HTML and CSS, hosted on GitHub Pages.
 
 ## Contact
 - GitHub: [@CharlesMisheal](https://github.com/CharlesMisheal)
+- LinkedIn: [charlesmisheal](https://linkedin.com/in/charlesmisheal)
 - Website: [charlesmisheal.github.io](https://charlesmisheal.github.io)
 
 ---
