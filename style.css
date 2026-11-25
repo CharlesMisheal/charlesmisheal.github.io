@@ -606,3 +606,45 @@ p {
     break-inside: avoid;
   }
 }
+
+/* Faith and competencies table */
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 1.25rem 0 0.5rem;
+}
+
+.align-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.align-table caption {
+  text-align: left;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+
+.align-table th,
+.align-table td {
+  border: 1px solid var(--line);
+  padding: 0.55rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.align-table thead th {
+  background: var(--navy);
+  color: var(--paper);
+}
+
+.align-table tbody th {
+  background: var(--wash);
+  color: var(--navy);
+}
+
+.download-link {
+  font-weight: 600;
+}

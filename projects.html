@@ -18,6 +18,7 @@
           <li><a href="resume.html">Résumé</a></li>
           <li><a href="projects.html" aria-current="page">Projects</a></li>
           <li><a href="principles.html">Guiding Principles</a></li>
+          <li><a href="alignment.html">Faith and Competencies</a></li>
           <li><a href="reflections.html">Reflections</a></li>
           <li><a href="growth.html">Mentorship and Growth</a></li>
         </ul>
@@ -27,12 +28,13 @@
   <main id="main">
     <p class="page-kicker">Work</p>
     <h1>Projects</h1>
-    <p class="lede">Three projects in education technology, AI evaluation, and information retrieval. Each one taught me something about building well and something about serving well.</p>
+    <p class="lede">Projects in education technology, AI evaluation, information retrieval, and cybersecurity. Each one taught me something about building well and something about serving well.</p>
     <nav class="toc" aria-label="Projects on this page">
       <ul>
         <li><a href="#bravick">Bravick</a></li>
         <li><a href="#evidence-following">Evidence-Following in RAG</a></li>
         <li><a href="#retrieval">Agricultural Document Retrieval</a></li>
+        <li><a href="#metasploit">Refined: Metasploit Report</a></li>
       </ul>
     </nav>
 
@@ -54,6 +56,8 @@
       <p>Bravick is built and available to schools through CloudCity. It brings exams, attendance, fees, timetables, and lesson plans into one system that works on a campus network with no cloud connection required on exam day.</p>
       <h3>Lessons learned</h3>
       <p>I learned to design for the hardest day, not the easiest one. Offline-first is not a feature you add at the end. It shapes the database, the network setup, and how backups work from the start. I also learned that good software comes from listening closely to the people who will use it.</p>
+      <h3>Ethical considerations</h3>
+      <p>Our class discussions on Google location tracking, Apple's CSAM scanning plan, and AirTag misuse showed how quickly technology can cross privacy lines when users are not told what happens to their data. Bravick holds student results, attendance, and fee records. Because it keeps that data on the school's own computer rather than a third-party cloud, with backups the school controls, the school decides where its data goes. I want to keep that commitment as Bravick grows.</p>
       <p class="faith-note"><strong>Faith in Practice:</strong> Bravick began with the question I try to ask of every project: "Who is this meant to bless?" Christ left the ninety and nine to find the one (Luke 15:4–7). Building for schools that most software overlooks is how I try to follow that pattern in my work. The project also taught me patience. Reliable systems, like discipleship, are built through many small and careful choices (Alma 37:6).</p>
     </article>
 
@@ -74,6 +78,8 @@
       <p>I tested Gemini 3.5 Flash-Lite, gpt-4.1-mini, and gpt-oss-20b. With the careful prompt, the models passed 96 to 103 of the 105 cases. With the plain prompt, they passed only 9 to 57. I published the benchmark on Zenodo in 2026 and shared the code on GitHub.</p>
       <h3>Lessons learned</h3>
       <p>The same model can be trustworthy or careless depending on how it is asked. Small wording choices have large effects, so evaluation has to test conditions one at a time. I also learned that a clear, honest negative result is more useful than a flattering one.</p>
+      <h3>Ethical considerations</h3>
+      <p>In our class discussion, I analyzed Google's 2024 Gemini image-generation failure, where well-meant tuning for diversity overrode what users asked for and produced historically inaccurate images. Google later explained what went wrong and added evaluation and red-teaming before relaunching. My benchmark tests the same kind of risk: a system's built-in behavior overriding the evidence in front of it. The lesson I take is that good intentions still need testing before launch, and that results should be published openly, including the unflattering ones.</p>
       <p class="faith-note"><strong>Faith in Practice:</strong> This project is about honesty. A student or farmer who asks an AI system for help deserves an answer that stays true to the evidence. Working on it strengthened my own commitment to being honest in how I report my work, even when the numbers are not impressive. I believe truth matters in small things, and I want to help make AI tools that people can trust.</p>
     </article>
 
@@ -94,7 +100,42 @@
       <p>Our pipeline raised nDCG@5 from 0.49 with the TF-IDF baseline to 0.74, meaning the most relevant documents appeared near the top far more often.</p>
       <h3>Lessons learned</h3>
       <p>Start with a simple baseline and measure every step. I also learned that leading a team is less about having every answer and more about helping each person contribute their best.</p>
+      <h3>Ethical considerations</h3>
+      <p>Agricultural advice affects people's harvests and income. A retrieval system that confidently surfaces the wrong document can mislead someone who trusts it. That is why we measured retrieval quality separately and checked results with 5-fold validation instead of trusting one good score. As in our class discussions on testing before launch, I believe a system like this should be measured honestly before anyone relies on it.</p>
       <p class="faith-note"><strong>Faith in Practice:</strong> Leading this team felt like ministering. King Benjamin taught that "when ye are in the service of your fellow beings ye are only in the service of your God" (Mosiah 2:17). Helping a teammate understand a difficult idea mattered as much to me as improving the score. The work itself serves people who feed their families and communities, and better retrieval can help them find reliable guidance when they need it.</p>
+    </article>
+    <article class="project" id="metasploit">
+      <h2>Refined Project: Metasploit Penetration Test Report (Version 2)</h2>
+      <p class="meta">IT 312 Cybersecurity Foundations, Project #8 · Kali Linux, Nmap, Metasploit Framework, Metasploitable 2 · <a class="download-link" href="docs/Project8_Metasploit_Refined.pdf" download>Download the refined report (PDF)</a></p>
+      <h3>Context</h3>
+      <p>On October 6, 2026, I completed a Metasploit lab in an isolated VMware network. Using Kali Linux, I scanned a deliberately vulnerable Metasploitable 2 server with Nmap, then gained root access in two separate ways: through the vsftpd 2.3.4 backdoor (CVE-2011-2523) and the Samba "username map script" command injection (CVE-2007-2447).</p>
+      <h3>Gaps in the original report</h3>
+      <ul>
+        <li>It explained how to break in in detail, but listed only general defenses, with no specific fixes or way to confirm them.</li>
+        <li>It had no formal scope or authorization statement.</li>
+        <li>It did not rank the findings by risk.</li>
+        <li>It was written for technical readers, so a manager would struggle to act on it.</li>
+        <li>It showed full password hashes from the target in a screenshot.</li>
+      </ul>
+      <h3>Refinements in Version 2</h3>
+      <ol>
+        <li>A one-page plain-language summary for managers, with actions in priority order.</li>
+        <li>A rules of engagement section defining the lab scope, what was allowed, and what was off-limits.</li>
+        <li>Risk ratings using official NVD CVSS scores: 9.8 Critical (CVSS v3.1) for vsftpd, and 6.0 Medium (CVSS v2) for Samba, which has no v3 score in NVD. I rate the Samba finding Critical in this lab because it gave root access with no credentials.</li>
+        <li>A remediation plan for each finding, plus step-by-step re-test instructions to confirm each fix.</li>
+        <li>Data handling rules, with the password hashes in Figure 4 redacted.</li>
+        <li>A section on ethical hacking and responsible disclosure.</li>
+        <li>A revision notes table that records each change, the gap it addresses, and my reasoning.</li>
+      </ol>
+      <h3>Decision-making</h3>
+      <p>I asked one question: what would make this report actually help a defender? Showing how to break in without showing how to fix it is only half the job. I used NVD scores because they are the industry standard, and I explained where my lab rating differs so readers can see my reasoning. The re-test steps are written as instructions for after the fixes are applied. I have not re-run them in the lab, and the report does not claim that I did.</p>
+      <h3>Impact</h3>
+      <p>The original report proved I could exploit a system. Version 2 shows I can also communicate risk, prioritize fixes, and work within legal and ethical limits. A manager can act on the first page, and a technician has a specific fix for each finding.</p>
+      <h3>Ethical considerations</h3>
+      <p>Penetration testing is only ethical with permission, so the new rules of engagement come first. Redacting hashes, even from a practice server, builds the habit of data minimization that real systems will require. Like the privacy cases we discussed in class, this project reminded me that what a tool can do and what it should do are different questions.</p>
+      <h3>Lessons learned</h3>
+      <p>A security report is written for the people who must fix the problem, not to show off the attack. Revisiting old work with fresh eyes also showed me how much I have grown since October.</p>
+      <p class="faith-note"><strong>Faith in Practice:</strong> The ability to break into a system calls for integrity, which is my principle of Integrating Faith and Work. Consistency in Small and Simple Things also applies. Small habits, like redacting a hash even in a lab, build the trust people will place in me later.</p>
     </article>
   </main>
   <footer class="site-footer">
