@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Usability Report | Charles Ahuose Misheal</title>
+  <meta name="description" content="Usability and accessibility testing of the portfolio of Charles Ahuose Misheal, with findings, design enhancements, and before and after results. IT 497 Week 5.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#102a43">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Usability Report | Charles Ahuose Misheal">
+  <meta property="og:description" content="Usability and accessibility testing of the portfolio of Charles Ahuose Misheal, with findings, design enhancements, and before and after results. IT 497 Week 5.">
+  <meta property="og:url" content="https://charlesmisheal.github.io/usability.html">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="site.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="index.html">Charles Ahuose Misheal</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"><span class="nav-toggle-icon" aria-hidden="true"></span>Menu</button>
+      <nav class="site-nav" aria-label="Primary">
+        <ul id="primary-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Résumé</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="principles.html">Guiding Principles</a></li>
+          <li><a href="alignment.html">Faith and Competencies</a></li>
+          <li><a href="integration.html">Integration Reflection</a></li>
+          <li><a href="reflections.html">Reflections</a></li>
+          <li><a href="growth.html">Mentorship and Growth</a></li>
+          <li><a href="review.html">Portfolio Review</a></li>
+          <li><a href="usability.html" aria-current="page">Usability Report</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="wide">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="index.html">Home</a></li><li>Professional Portfolio</li><li><span aria-current="page">Usability Report</span></li></ol>
+    </nav>
+    <p class="page-kicker">Professional Growth Portfolio · IT 497 Week 5</p>
+    <h1>Usability Report</h1>
+    <div class="prose">
+      <p class="lede">How I tested this portfolio for usability and accessibility, what I found, what I changed, and what the changes achieved, with before and after measurements.</p>
+    <nav class="page-toc" aria-label="On this page">
+      <p class="toc-title">On this page</p>
+      <ul>
+        <li><a href="#purpose">Purpose and scope</a></li>
+        <li><a href="#method">Method and tools</a></li>
+        <li><a href="#baseline">What the baseline showed</a></li>
+        <li><a href="#scenarios">Task scenarios</a></li>
+        <li><a href="#changes">Enhancements implemented</a></li>
+        <li><a href="#results">Before and after results</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#next">Remaining recommendations</a></li>
+        <li><a href="#refs">References</a></li>
+      </ul>
+    </nav>
+    </div>
+    <div class="prose">
+      <section aria-labelledby="purpose">
+        <h2 id="purpose">Purpose and scope</h2>
+        <p>A portfolio only serves its readers if they can find what they need quickly, on any device, and with any ability. I reviewed all 9 pages of the site as they were published at the end of Week 5, fixed the problems I found, and then repeated every test on the updated site, which now has 10 pages including this report.</p>
+      </section>
+
+      <section aria-labelledby="method">
+        <h2 id="method">Method and tools</h2>
+        <p>This round of testing was an expert review that I carried out myself, supported by automated tools. I did not run sessions with other participants this week; that is the first item in my <a href="#next">remaining recommendations</a>. I ran the same tests before and after the changes, on a local copy of the site that matched the live version.</p>
+        <ul>
+          <li><strong>Heuristic review:</strong> I walked through each page using Nielsen's (1994) ten usability heuristics, such as visibility of system status, user control and freedom, and aesthetic and minimalist design.</li>
+          <li><strong>Task scenarios:</strong> seven common tasks, measured by taps or clicks and by how far a reader must scroll on a 360-pixel phone screen.</li>
+          <li><strong>Lighthouse 13.5:</strong> performance, accessibility, best practices, and SEO for every page in both mobile and desktop modes (Google, n.d.).</li>
+          <li><strong>axe-core:</strong> automated accessibility checks against WCAG 2.1 A and AA rules and best practices, at 360 and 1,280 pixels wide (Deque Systems, n.d.).</li>
+          <li><strong>html-validate:</strong> HTML markup validation for every page.</li>
+          <li><strong>Link check:</strong> every internal link and page anchor, plus every external link.</li>
+          <li><strong>Keyboard check:</strong> tabbing through each page to confirm the skip link works, every focused element shows a visible outline, and the tab order is logical.</li>
+          <li><strong>Responsive check:</strong> screenshots at 360, 768, and 1,280 pixels wide, and a check for sideways scrolling.</li>
+          <li><strong>Standards:</strong> findings were rated against the Web Content Accessibility Guidelines (WCAG) 2.2 (World Wide Web Consortium [W3C], 2024).</li>
+        </ul>
+        <p>Severity ratings: <strong>High</strong> means a barrier that fails a WCAG requirement or blocks a task; <strong>Medium</strong> means a task is noticeably slower or harder; <strong>Low</strong> means a minor issue or polish.</p>
+      </section>
+    </div>
+
+    <section aria-labelledby="baseline">
+      <h2 id="baseline">What the baseline showed</h2>
+      <div class="prose">
+        <p>The site started from a strong technical base. Every page scored 100 for Lighthouse performance and SEO, color contrast passed on every page, html-validate found no errors, there were no broken internal links, and no page scrolled sideways at any width. The problems were mostly about finding things: a tall menu on phones, very long pages with no way to jump around, and important content buried deep in a page.</p>
+      </div>
+      <section class="table-wrap" tabindex="0" aria-label="Table 1. Usability and accessibility findings">
+        <table class="align-table">
+          <caption>Table 1. Usability and accessibility findings</caption>
+          <thead><tr><th scope="col">ID</th><th scope="col">Finding</th><th scope="col">Evidence</th><th scope="col">Severity</th><th scope="col">Principle</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">U1</th><td>A table on the Integration Reflection page could scroll sideways on phones but could not be reached with a keyboard.</td><td>axe "scrollable-region-focusable" (serious) at 360 px</td><td><span class="priority-high">High</span></td><td>WCAG 2.1.1 Keyboard</td></tr>
+            <tr><th scope="row">U2</th><td>On phones, the menu filled 230 pixels at the top of every page, almost a third of the screen, before any content appeared.</td><td>Header 230 px tall on a 360 × 800 screen; ten links wrapped onto four rows</td><td><span class="priority-medium">Medium</span></td><td>Aesthetic and minimalist design</td></tr>
+            <tr><th scope="row">U3</th><td>Long pages had no way to jump to a section or back to the top.</td><td>At 360 px: Review 14,917 px, Integration 13,552 px, Projects 12,542 px tall; 0 back-to-top links</td><td><span class="priority-medium">Medium</span></td><td>User control and freedom</td></tr>
+            <tr><th scope="row">U4</th><td>Each project's ethics section was buried inside a long article.</td><td>Metasploit ethics heading 2,594 px below the project's start at 360 px (about 3.5 screens)</td><td><span class="priority-medium">Medium</span></td><td>Recognition rather than recall; efficiency</td></tr>
+            <tr><th scope="row">U5</th><td>My 4.2 video reflection was only on YouTube, so the portfolio had no video and visitors had to leave the site to watch it.</td><td>0 embedded videos</td><td><span class="priority-medium">Medium</span></td><td>Match between system and real world</td></tr>
+            <tr><th scope="row">U6</th><td>The Home page's résumé PDF link was far down the page on phones.</td><td>2,041 px from the top at 360 px (about 2.8 screens)</td><td><span class="priority-low">Low</span></td><td>Flexibility and efficiency of use</td></tr>
+            <tr><th scope="row">U7</th><td>A heading level was skipped on the Integration Reflection page (h1 to h3), which confuses screen reader navigation.</td><td>axe "heading-order"; Lighthouse accessibility 98 on that page</td><td><span class="priority-low">Low</span></td><td>WCAG 1.3.1 Info and Relationships</td></tr>
+            <tr><th scope="row">U8</th><td>Readers could not tell which part of the portfolio a page belonged to, and the footer had no site links.</td><td>No breadcrumb; footer had 0 navigation links</td><td><span class="priority-low">Low</span></td><td>Visibility of system status</td></tr>
+            <tr><th scope="row">U9</th><td>No favicon, which caused a 404 error in the browser console on every page.</td><td>Lighthouse best practices 96 on all pages ("errors-in-console")</td><td><span class="priority-low">Low</span></td><td>Consistency and standards</td></tr>
+            <tr><th scope="row">U10</th><td>Keyboard users on phones had to pass 11 links before reaching content if they did not use the skip link.</td><td>11 tab stops before the main content</td><td><span class="priority-low">Low</span></td><td>WCAG 2.4.1 Bypass Blocks (skip link already passed)</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+
+    <section aria-labelledby="scenarios">
+      <h2 id="scenarios">Task scenarios</h2>
+      <p>I measured seven tasks on a 360-pixel phone screen, starting from the Home page. One screen is about 740 pixels of scrolling.</p>
+      <section class="table-wrap" tabindex="0" aria-label="Table 2. Task scenarios before and after">
+        <table class="align-table">
+          <caption>Table 2. Task scenarios before and after</caption>
+          <thead><tr><th scope="col">Task</th><th scope="col">Before</th><th scope="col">After</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">T1. Download the résumé PDF</th><td>1 tap, after scrolling about 2.8 screens</td><td>1 tap on a button in the first screen (448 px from the top), or from the footer on any page</td></tr>
+            <tr><th scope="row">T2. Read the Metasploit project's ethics section</th><td>2 taps (Projects, then the project link), then scroll about 3.5 screens</td><td>3 taps (Projects, the project link, "Ethical considerations"), with no long scrolling</td></tr>
+            <tr><th scope="row">T3. Reach Faith and Competencies</th><td>1 tap, but the menu filled 230 px of every screen</td><td>2 taps (Menu, then the link) with a 73 px header, or 1 tap from the footer</td></tr>
+            <tr><th scope="row">T4. Return to the menu from the bottom of the Review page</th><td>Scroll back up 14,917 px (about 20.2 screens)</td><td>1 tap on "Back to top," or use the footer links directly</td></tr>
+            <tr><th scope="row">T5. Watch my 4.2 video reflection</th><td>Not possible on the site</td><td>Plays on the Home page, with a YouTube link and a text version of the script</td></tr>
+            <tr><th scope="row">T6. Skip to the main content with a keyboard</th><td>Skip link worked on 9 of 9 pages</td><td>Skip link works on 10 of 10 pages; 3 tab stops before content on a phone instead of 11</td></tr>
+            <tr><th scope="row">T7. Know where I am in the portfolio</th><td>Only the small label above each page title</td><td>A breadcrumb on every page except Home, an "On this page" list on long pages, and the current page marked in the menu</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <div class="prose">
+        <p>One change is a trade-off. On phones, reaching a page from the top menu now takes one extra tap, because the menu opens from a button. I accepted that because the header shrank from 230 to 73 pixels on every page, and the footer now gives one-tap access to every page from the bottom of the screen.</p>
+      </div>
+    </section>
+
+    <div class="prose">
+      <section aria-labelledby="changes">
+        <h2 id="changes">Enhancements implemented</h2>
+        <h3>Navigation</h3>
+        <ul>
+          <li>A "Menu" button on phones that opens and closes the menu, reports its state to screen readers with <code>aria-expanded</code>, and closes with the Escape key. Without JavaScript, the full menu still shows (U2, U10).</li>
+          <li>A breadcrumb trail on every page except Home, showing whether a page belongs to the Professional Portfolio or the Spiritual Progression Portfolio (U8).</li>
+          <li>"On this page" lists on the six longest text pages (U3).</li>
+          <li>"Jump to" links at the top of each project for its ethical considerations and faith in practice sections (U4).</li>
+          <li>A footer menu that groups every page into the two portfolios, plus a "Back to top" link on every page (U3, U8).</li>
+          <li>Moved the Home page buttons directly under the opening line and added a "Download résumé (PDF)" button (U6).</li>
+          <li>Tightened menu spacing on tablets so the ten menu links still fit on two rows.</li>
+          <li>The new Usability Report page in the menu, the footer, and the breadcrumbs.</li>
+        </ul>
+        <h3>Multimedia</h3>
+        <ul>
+          <li>My 4.2 video reflection on the <a href="index.html#video">Home page</a>. A preview image with alt text loads first, and YouTube's privacy-enhanced player (youtube-nocookie.com) loads only when a visitor presses play, so the page makes no requests to YouTube until then. The player has a descriptive title and a 16:9 frame that resizes on every screen. A direct YouTube link and an expandable text version of the script are included (U5).</li>
+          <li>A new entry for the video on the Reflections page.</li>
+          <li>Before and after screenshots on this page, each with alt text.</li>
+          <li>A simple site icon (favicon) in the portfolio's navy color (U9).</li>
+        </ul>
+        <h3>Accessibility</h3>
+        <ul>
+          <li>Scrollable tables can now be focused and scrolled with a keyboard, and each one is labeled with its caption (U1).</li>
+          <li>Corrected the heading order on the Integration Reflection page by adding a "Mind map" heading (U7).</li>
+          <li>Stronger white focus outlines on the navy header and footer, and visible focus on the video frame and the script toggle.</li>
+          <li>Section links now stop just below the top edge, so headings are not cut off when a reader jumps to them.</li>
+          <li>Every touch target in the menus stays at least 44 pixels tall.</li>
+        </ul>
+        <h3>Responsiveness and metadata</h3>
+        <ul>
+          <li>Checked every page at 360, 768, and 1,280 pixels; none scroll sideways.</li>
+          <li>Added a theme color and Open Graph title, description, and link to every page, so shared links show a clear preview.</li>
+          <li>Print styles hide the new navigation elements, so the résumé still prints cleanly.</li>
+        </ul>
+      </section>
+    </div>
+
+    <section aria-labelledby="results">
+      <h2 id="results">Before and after results</h2>
+      <section class="table-wrap" tabindex="0" aria-label="Table 3. Lighthouse average scores across all pages">
+        <table class="align-table">
+          <caption>Table 3. Lighthouse average scores across all pages (out of 100)</caption>
+          <thead><tr><th scope="col">Category</th><th scope="col">Before (9 pages)</th><th scope="col">After (10 pages)</th></tr></thead>
+          <tbody>
+<tr><th scope="row">Performance (mobile)</th><td>100 (lowest 100)</td><td>100 (lowest 100)</td></tr>
+<tr><th scope="row">Performance (desktop)</th><td>100 (lowest 100)</td><td>100 (lowest 100)</td></tr>
+<tr><th scope="row">Accessibility (mobile)</th><td>99.8 (lowest 98)</td><td>100 (lowest 100)</td></tr>
+<tr><th scope="row">Accessibility (desktop)</th><td>99.8 (lowest 98)</td><td>100 (lowest 100)</td></tr>
+<tr><th scope="row">Best Practices (mobile)</th><td>96 (lowest 96)</td><td>100 (lowest 100)</td></tr>
+<tr><th scope="row">Best Practices (desktop)</th><td>96 (lowest 96)</td><td>100 (lowest 100)</td></tr>
+<tr><th scope="row">SEO (mobile)</th><td>100 (lowest 100)</td><td>100 (lowest 100)</td></tr>
+<tr><th scope="row">SEO (desktop)</th><td>100 (lowest 100)</td><td>100 (lowest 100)</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="table-wrap" tabindex="0" aria-label="Table 4. Accessibility, code, and layout checks">
+        <table class="align-table">
+          <caption>Table 4. Accessibility, code, and layout checks</caption>
+          <thead><tr><th scope="col">Check</th><th scope="col">Before</th><th scope="col">After</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">axe-core violations (all pages, 360 and 1,280 px)</th><td>3</td><td>0</td></tr>
+            <tr><th scope="row">Pages with Lighthouse accessibility of 100 (mobile)</th><td>8 of 9</td><td>10 of 10</td></tr>
+            <tr><th scope="row">Pages with Lighthouse best practices of 100 (mobile)</th><td>0 of 9</td><td>10 of 10</td></tr>
+            <tr><th scope="row">Skipped heading levels</th><td>1</td><td>0</td></tr>
+            <tr><th scope="row">html-validate errors</th><td>0</td><td>0</td></tr>
+            <tr><th scope="row">Broken internal links or anchors</th><td>0</td><td>0</td></tr>
+            <tr><th scope="row">External links responding</th><td>21 of 21</td><td>22 of 22</td></tr>
+            <tr><th scope="row">Focused elements without a visible outline</th><td>0</td><td>0</td></tr>
+            <tr><th scope="row">Pages that scroll sideways (360, 768, 1,280 px)</th><td>0</td><td>0</td></tr>
+            <tr><th scope="row">Header height on a 360 px phone</th><td>230 px</td><td>73 px</td></tr>
+            <tr><th scope="row">Tab stops before main content on a phone</th><td>11</td><td>3</td></tr>
+            <tr><th scope="row">Back-to-top links on the Projects page</th><td>0</td><td>1</td></tr>
+            <tr><th scope="row">Ethics jump links on the Projects page</th><td>0</td><td>4</td></tr>
+            <tr><th scope="row">Embedded videos</th><td>0</td><td>1</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <div class="figure-pair">
+        <figure class="report-figure">
+          <img src="images/usability/before-home-360.jpg" width="360" height="800" loading="lazy" alt="Before: on a 360-pixel phone screen, the navy menu with ten links on four rows fills the top third of the Home page.">
+          <figcaption>Figure 1. Before: the menu filled 230 px of a phone screen.</figcaption>
+        </figure>
+        <figure class="report-figure">
+          <img src="images/usability/after-home-360.jpg" width="360" height="800" loading="lazy" alt="After: on the same phone screen, a slim header shows the site name and a Menu button, and the page title and introduction appear right away.">
+          <figcaption>Figure 2. After: a 73 px header with a Menu button.</figcaption>
+        </figure>
+        <figure class="report-figure">
+          <img src="images/usability/after-menu-open-360.jpg" width="360" height="800" loading="lazy" alt="After: the phone menu opened, listing all ten pages in one column, with the current page marked by a white bar.">
+          <figcaption>Figure 3. After: the phone menu opened, with the current page marked.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="prose">
+      <section aria-labelledby="impact">
+        <h2 id="impact">Impact</h2>
+        <ul>
+          <li><strong>More content, sooner.</strong> On a phone, the header now takes 73 pixels instead of 230, so readers see the page title and introduction right away on every page.</li>
+          <li><strong>Less scrolling to key content.</strong> A project's ethics section is now one tap away instead of up to 3.5 screens of scrolling, and the résumé PDF is in the first screen of the Home page.</li>
+          <li><strong>No dead ends.</strong> Every page now ends with a full site menu and a way back to the top, which matters most on the longest pages, up to 14,917 pixels on a phone.</li>
+          <li><strong>Fully keyboard accessible.</strong> Automated accessibility violations went from 3 to 0, and every page now scores 100 or higher for Lighthouse accessibility.</li>
+          <li><strong>Richer content.</strong> The portfolio now includes my video reflection, so visitors can hear me explain my growth in my own voice without leaving the site.</li>
+        </ul>
+        <p>This work also connects to my principle of Ministering to the One. A visitor using a screen reader, a keyboard, or an older phone on a slow connection deserves the same experience as anyone else. Testing for that reader is part of serving them.</p>
+      </section>
+
+      <section aria-labelledby="next">
+        <h2 id="next">Remaining recommendations</h2>
+        <ol>
+          <li><strong>Test with real people.</strong> Ask three to five people, including at least one who uses a phone as their main device, to complete tasks T1 to T5 while thinking aloud, and fix the points where they hesitate. Nielsen (2000) found that small groups of testers reveal most usability problems.</li>
+          <li><strong>Check the video captions.</strong> Confirm that the YouTube captions for my video are accurate, and correct them in YouTube Studio if needed.</li>
+          <li><strong>Add a social preview image.</strong> Create a simple preview image for shared links when I have a professional photo or graphic to use.</li>
+          <li><strong>Repeat the tests each block.</strong> Run the same Lighthouse, axe, link, and keyboard checks whenever I add a page, so new content keeps the same standard.</li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="refs">
+        <h2 id="refs">References</h2>
+        <ul class="references">
+          <li>Deque Systems. (n.d.). <em>axe-core</em> [Computer software]. GitHub. https://github.com/dequelabs/axe-core</li>
+          <li>Google. (n.d.). <em>Lighthouse</em> [Computer software]. Chrome for Developers. https://developer.chrome.com/docs/lighthouse/overview</li>
+          <li>Nielsen, J. (1994, April 24). <em>10 usability heuristics for user interface design</em>. Nielsen Norman Group. https://www.nngroup.com/articles/ten-usability-heuristics/</li>
+          <li>Nielsen, J. (2000, March 18). <em>Why you only need to test with 5 users</em>. Nielsen Norman Group. https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/</li>
+          <li>World Wide Web Consortium. (2024, December 12). <em>Web content accessibility guidelines (WCAG) 2.2</em>. https://www.w3.org/TR/WCAG22/</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <p class="footer-heading">Professional Portfolio</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Résumé</a></li>
+          <li><a href="resume.pdf">Résumé (PDF)</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="usability.html">Usability Report</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Spiritual Progression Portfolio</p>
+        <ul>
+          <li><a href="principles.html">Guiding Principles</a></li>
+          <li><a href="alignment.html">Faith and Competencies</a></li>
+          <li><a href="integration.html">Integration Reflection</a></li>
+          <li><a href="reflections.html">Reflections</a></li>
+          <li><a href="growth.html">Mentorship and Growth</a></li>
+          <li><a href="review.html">Portfolio Review</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p class="footer-row"><a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a></p>
+    <p>Charles Ahuose Misheal · <a href="https://github.com/CharlesMisheal">GitHub</a> · <a href="https://linkedin.com/in/charlesmisheal">LinkedIn</a></p>
+  </footer>
+</body>
+</html>

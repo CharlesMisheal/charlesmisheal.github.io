@@ -6,14 +6,23 @@
   <title>Spiritual Portfolio Review | Charles Ahuose Misheal</title>
   <meta name="description" content="A review of the Spiritual Progression Portfolio of Charles Ahuose Misheal, with findings, suggested enhancements, and a finalization plan. IT 497 Week 5.">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#102a43">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Spiritual Portfolio Review | Charles Ahuose Misheal">
+  <meta property="og:description" content="A review of the Spiritual Progression Portfolio of Charles Ahuose Misheal, with findings, suggested enhancements, and a finalization plan. IT 497 Week 5.">
+  <meta property="og:url" content="https://charlesmisheal.github.io/review.html">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="site.js" defer></script>
 </head>
-<body>
+<body id="top">
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header">
     <div class="header-inner">
       <a class="site-logo" href="index.html">Charles Ahuose Misheal</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"><span class="nav-toggle-icon" aria-hidden="true"></span>Menu</button>
       <nav class="site-nav" aria-label="Primary">
-        <ul>
+        <ul id="primary-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="resume.html">Résumé</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -23,15 +32,33 @@
           <li><a href="reflections.html">Reflections</a></li>
           <li><a href="growth.html">Mentorship and Growth</a></li>
           <li><a href="review.html" aria-current="page">Portfolio Review</a></li>
+          <li><a href="usability.html">Usability Report</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main id="main" class="wide">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="index.html">Home</a></li><li><a href="reflections.html#overview">Spiritual Progression Portfolio</a></li><li><span aria-current="page">Portfolio Review</span></li></ol>
+    </nav>
     <p class="page-kicker">Spiritual Progression Portfolio · IT 497 Week 5</p>
     <h1>Spiritual Portfolio Review</h1>
     <div class="prose">
       <p class="lede">A review of every part of my portfolio for cohesion, with findings, the enhancements they lead to, and a plan to finalize the portfolio so it shows my professional and spiritual growth as one story.</p>
+    <nav class="page-toc" aria-label="On this page">
+      <p class="toc-title">On this page</p>
+      <ul>
+        <li><a href="#purpose">Purpose and method</a></li>
+        <li><a href="#strengths">What is working well</a></li>
+        <li><a href="#components">Component-by-component review</a></li>
+        <li><a href="#findings">Cohesion findings</a></li>
+        <li><a href="#enhancements">Suggested enhancements</a></li>
+        <li><a href="#completed">Design updates completed this week</a></li>
+        <li><a href="#plan">Finalization plan</a></li>
+        <li><a href="#learned">What this review taught me</a></li>
+        <li><a href="#refs">References</a></li>
+      </ul>
+    </nav>
 
       <section aria-labelledby="purpose">
         <h2 id="purpose">Purpose and method</h2>
@@ -61,7 +88,7 @@
 
     <section aria-labelledby="components">
       <h2 id="components">Component-by-component review</h2>
-      <div class="table-wrap">
+      <section class="table-wrap" tabindex="0" aria-label="Table 1. Review of each portfolio component">
         <table class="align-table">
           <caption>Table 1. Review of each portfolio component</caption>
           <thead><tr><th scope="col">Component</th><th scope="col">Strengths</th><th scope="col">Needs attention</th><th scope="col">Finding</th></tr></thead>
@@ -78,7 +105,7 @@
             <tr><th scope="row">Navigation and layout</th><td>One shared header, footer, and stylesheet on every page.</td><td>Adding two new pages brings the menu to nine links, which wraps onto several rows on a phone.</td><td>F8</td></tr>
           </tbody>
         </table>
-      </div>
+      </section>
     </section>
 
     <div class="prose">
@@ -102,7 +129,7 @@
     <section aria-labelledby="enhancements">
       <h2 id="enhancements">Suggested enhancements</h2>
       <p>Each enhancement responds to a finding above. "Done" items were completed as part of this review. "Planned" items are part of the finalization plan below.</p>
-      <div class="table-wrap">
+      <section class="table-wrap" tabindex="0" aria-label="Table 2. Enhancements linked to findings, with priority and status">
         <table class="align-table">
           <caption>Table 2. Enhancements linked to findings, with priority and status</caption>
           <thead><tr><th scope="col">#</th><th scope="col">Finding</th><th scope="col">Enhancement</th><th scope="col">Goal it serves</th><th scope="col">Priority</th><th scope="col">Status</th></tr></thead>
@@ -120,7 +147,7 @@
             <tr><th scope="row">E11</th><td>F10</td><td>Ask two people to complete three tasks on a phone: find a project's ethics section, find my guiding principles, and download my résumé. Note where they hesitate and fix those spots.</td><td>Improves design through real usability feedback.</td><td><span class="priority-medium">Medium</span></td><td><span class="status status-planned">Planned</span></td></tr>
           </tbody>
         </table>
-      </div>
+      </section>
     </section>
 
     <div class="prose">
@@ -166,6 +193,30 @@
     </div>
   </main>
   <footer class="site-footer">
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <p class="footer-heading">Professional Portfolio</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Résumé</a></li>
+          <li><a href="resume.pdf">Résumé (PDF)</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="usability.html">Usability Report</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Spiritual Progression Portfolio</p>
+        <ul>
+          <li><a href="principles.html">Guiding Principles</a></li>
+          <li><a href="alignment.html">Faith and Competencies</a></li>
+          <li><a href="integration.html">Integration Reflection</a></li>
+          <li><a href="reflections.html">Reflections</a></li>
+          <li><a href="growth.html">Mentorship and Growth</a></li>
+          <li><a href="review.html">Portfolio Review</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p class="footer-row"><a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a></p>
     <p>Charles Ahuose Misheal · <a href="https://github.com/CharlesMisheal">GitHub</a> · <a href="https://linkedin.com/in/charlesmisheal">LinkedIn</a></p>
   </footer>
 </body>

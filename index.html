@@ -6,14 +6,23 @@
   <title>Home | Charles Ahuose Misheal</title>
   <meta name="description" content="Charles Ahuose Misheal: IT student at Ensign College, Certified Kubernetes Administrator, founder of CloudCity Technology and Education, and AI evaluation researcher. Using technology to serve the one.">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#102a43">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Home | Charles Ahuose Misheal">
+  <meta property="og:description" content="Charles Ahuose Misheal: IT student at Ensign College, Certified Kubernetes Administrator, founder of CloudCity Technology and Education, and AI evaluation researcher. Using technology to serve the one.">
+  <meta property="og:url" content="https://charlesmisheal.github.io/">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="site.js" defer></script>
 </head>
-<body>
+<body id="top">
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header">
     <div class="header-inner">
       <a class="site-logo" href="index.html">Charles Ahuose Misheal</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"><span class="nav-toggle-icon" aria-hidden="true"></span>Menu</button>
       <nav class="site-nav" aria-label="Primary">
-        <ul>
+        <ul id="primary-menu">
           <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="resume.html">Résumé</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -23,6 +32,7 @@
           <li><a href="reflections.html">Reflections</a></li>
           <li><a href="growth.html">Mentorship and Growth</a></li>
           <li><a href="review.html">Portfolio Review</a></li>
+          <li><a href="usability.html">Usability Report</a></li>
         </ul>
       </nav>
     </div>
@@ -31,6 +41,11 @@
     <p class="page-kicker">Home / About</p>
     <h1>Charles Ahuose Misheal</h1>
     <p class="lede role">I build technology that keeps working when the internet doesn't, and I test whether AI tells the truth.</p>
+    <p class="cta-row">
+      <a class="button" href="resume.html">View my résumé</a>
+      <a class="button button-secondary" href="projects.html">See my projects</a>
+      <a class="button button-secondary" href="resume.pdf">Download résumé (PDF)</a>
+    </p>
     <p>I once planned to study medicine. When that door closed, I taught myself technology through YouTube, and I have been teaching others ever since. Today I am a final-year B.A.S. Information Technology student at Ensign College (GPA 3.66, expected August 2027), a Certified Kubernetes Administrator, the founder of CloudCity Technology and Education, and a former IT Manager at Golden Touch College.</p>
     <p>I built <a href="projects.html#bravick">Bravick</a>, an offline-first school management and exam platform for schools with unreliable internet. I also published a <a href="projects.html#evidence-following">benchmark</a> showing that AI models which passed up to 103 of 105 evidence tests with a careful prompt passed as few as 9 with a plain one. That gap is why I am heading into AI evaluation and research, and into AI for education that serves African learners.</p>
     <ul class="highlights" aria-label="Highlights">
@@ -38,10 +53,6 @@
       <li><strong>Published</strong> LLM evaluation benchmark on Zenodo</li>
       <li><strong>0.49 → 0.74</strong> nDCG@5 as team lead on a retrieval pipeline</li>
     </ul>
-    <p class="cta-row">
-      <a class="button" href="resume.html">View my résumé</a>
-      <a class="button button-secondary" href="projects.html">See my projects</a>
-    </p>
     <figure class="mission">
       <blockquote>
         <p>Using technology to serve the one</p>
@@ -49,6 +60,32 @@
       <figcaption><cite>(<a href="https://www.churchofjesuschrist.org/study/scriptures/nt/luke/15?lang=eng&amp;id=4-7#p4">Luke 15:4–7</a>)</cite></figcaption>
     </figure>
     <p>My faith shapes how I work. I start projects by asking, "Who is this meant to bless?" Behind every system is a student, a teacher, or a family, and I want the tools I build to serve them honestly.</p>
+    <section aria-labelledby="video">
+      <h2 id="video">Video: My development journey</h2>
+      <p>In this video for IT 497, I walk through my portfolio and reflect on how my choices have shaped me spiritually and professionally.</p>
+      <div class="video-frame">
+        <a class="video-facade" href="https://youtu.be/nYJ3vHon4dA" data-embed="https://www.youtube-nocookie.com/embed/nYJ3vHon4dA?autoplay=1" data-title="Video: Charles Ahuose Misheal reflects on his development journey (IT 497)">
+          <img src="images/video-thumbnail.jpg" width="960" height="540" loading="lazy" alt="Video preview showing my Faith and Professional Competencies page in a web browser">
+          <span class="video-play" aria-hidden="true"></span>
+          <span class="visually-hidden">Play video: My development journey</span>
+        </a>
+      </div>
+      <p>The video loads from YouTube only when you press play. You can also <a href="https://youtu.be/nYJ3vHon4dA">watch it on YouTube</a>.</p>
+      <details class="transcript">
+        <summary>Read the video script</summary>
+        <div>
+          <p>Hi, I'm Charles Ahuose Misheal. This week I spent time reflecting on how my choices have shaped who I am, both spiritually and professionally. I want to walk you through my portfolio and share what I learned.</p>
+          <p>My journey into technology did not start the way I planned. I wanted to study medicine. When that door closed, I had a choice. I could wait, or I could act. I started teaching myself technology through YouTube, one video at a time. Today I'm in my final year of Information Technology at Ensign College, I'm a Certified Kubernetes Administrator, and I've mentored more than 300 learners through CloudCity Technology and Education.</p>
+          <p>For my reflection this week, I found a quiet place at home and pondered Doctrine and Covenants 58, verses 26 to 28. Verse 28 says, "the power is in them, wherein they are agents unto themselves." That verse helped me see my past differently. Teaching myself technology was not an accident. It was agency.</p>
+          <p>Elder Wirthlin's talk, "Come What May, and Love It," taught me that how we react to adversity shapes our growth. And President Uchtdorf said belief "requires a little scientific curiosity." As someone who tests AI systems, I loved that. Faith and careful thinking can work together.</p>
+          <p>I also added a new page called Faith and Professional Competencies. Here I connect five of my skills to my three guiding principles. Problem-solving and integrity connect to Integrating Faith and Work. AI evaluation and teaching connect to Ministering to the One. And collaboration connects to Consistency in Small and Simple Things. For example, as team lead in TRI AI Saturdays, I learned that a team grows through small, steady habits, like checking in and keeping everyone moving together.</p>
+          <p>On my Projects page, each project now includes an ethics section. Bravick keeps school records on the school's own computer, so the school controls its data. My benchmark showed that AI models passed up to 103 of 105 cases with a careful prompt, but as few as 9 with a plain one. That connects to our class discussion about Google Gemini: good intentions still need testing before launch.</p>
+          <p>My refined project is my IT 312 Metasploit report. The first version showed how to break into a vulnerable lab server, but not how to fix it. In Version 2, I added a plain-language summary for managers, rules of engagement, official risk ratings, a remediation plan, and redacted the password hashes. I asked one question: what would actually help a defender? Small habits, like redacting a hash even in a lab, build trust.</p>
+          <p>Reflection has become a real growth tool for me. Each week I now ask three questions: What did I choose to do? What did I wait to be told? And who did my work bless?</p>
+          <p>My faith and my work are not separate. They are woven together. Thank you for watching.</p>
+        </div>
+      </details>
+    </section>
     <h2>Connect</h2>
     <ul class="links">
       <li><a href="https://github.com/CharlesMisheal">GitHub</a></li>
@@ -66,6 +103,30 @@
     </ul>
   </main>
   <footer class="site-footer">
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <p class="footer-heading">Professional Portfolio</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Résumé</a></li>
+          <li><a href="resume.pdf">Résumé (PDF)</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="usability.html">Usability Report</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Spiritual Progression Portfolio</p>
+        <ul>
+          <li><a href="principles.html">Guiding Principles</a></li>
+          <li><a href="alignment.html">Faith and Competencies</a></li>
+          <li><a href="integration.html">Integration Reflection</a></li>
+          <li><a href="reflections.html">Reflections</a></li>
+          <li><a href="growth.html">Mentorship and Growth</a></li>
+          <li><a href="review.html">Portfolio Review</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p class="footer-row"><a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a></p>
     <p>Charles Ahuose Misheal · <a href="https://github.com/CharlesMisheal">GitHub</a> · <a href="https://linkedin.com/in/charlesmisheal">LinkedIn</a></p>
   </footer>
 </body>

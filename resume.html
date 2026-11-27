@@ -6,14 +6,23 @@
   <title>Résumé | Charles Ahuose Misheal</title>
   <meta name="description" content="Résumé of Charles Ahuose Misheal: Information Technology, Kubernetes (CKA), full-stack development, networking, and AI evaluation.">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#102a43">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Résumé | Charles Ahuose Misheal">
+  <meta property="og:description" content="Résumé of Charles Ahuose Misheal: Information Technology, Kubernetes (CKA), full-stack development, networking, and AI evaluation.">
+  <meta property="og:url" content="https://charlesmisheal.github.io/resume.html">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="site.js" defer></script>
 </head>
-<body>
+<body id="top">
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header">
     <div class="header-inner">
       <a class="site-logo" href="index.html">Charles Ahuose Misheal</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"><span class="nav-toggle-icon" aria-hidden="true"></span>Menu</button>
       <nav class="site-nav" aria-label="Primary">
-        <ul>
+        <ul id="primary-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="resume.html" aria-current="page">Résumé</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -23,11 +32,15 @@
           <li><a href="reflections.html">Reflections</a></li>
           <li><a href="growth.html">Mentorship and Growth</a></li>
           <li><a href="review.html">Portfolio Review</a></li>
+          <li><a href="usability.html">Usability Report</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main id="main" class="resume">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="index.html">Home</a></li><li>Professional Portfolio</li><li><span aria-current="page">Résumé</span></li></ol>
+    </nav>
     <header class="resume-head">
       <p class="page-kicker">Résumé</p>
       <h1>Charles Ahuose Misheal</h1>
@@ -39,6 +52,18 @@
       </ul>
       <p class="no-print"><a class="button" href="resume.pdf" download>Download PDF</a> <button class="button button-secondary" type="button" onclick="window.print()">Print</button></p>
     </header>
+    <nav class="page-toc" aria-label="On this page">
+      <p class="toc-title">On this page</p>
+      <ul>
+        <li><a href="#r-summary">Summary</a></li>
+        <li><a href="#r-skills">Technical Skills</a></li>
+        <li><a href="#r-experience">Experience</a></li>
+        <li><a href="#r-projects">Projects and Publication</a></li>
+        <li><a href="#r-education">Education</a></li>
+        <li><a href="#r-certs">Certifications and Training</a></li>
+        <li><a href="#r-volunteer">Volunteer Service</a></li>
+      </ul>
+    </nav>
 
     <section aria-labelledby="r-summary">
       <h2 id="r-summary">Summary</h2>
@@ -161,6 +186,30 @@
     </section>
   </main>
   <footer class="site-footer">
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <p class="footer-heading">Professional Portfolio</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Résumé</a></li>
+          <li><a href="resume.pdf">Résumé (PDF)</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="usability.html">Usability Report</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Spiritual Progression Portfolio</p>
+        <ul>
+          <li><a href="principles.html">Guiding Principles</a></li>
+          <li><a href="alignment.html">Faith and Competencies</a></li>
+          <li><a href="integration.html">Integration Reflection</a></li>
+          <li><a href="reflections.html">Reflections</a></li>
+          <li><a href="growth.html">Mentorship and Growth</a></li>
+          <li><a href="review.html">Portfolio Review</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p class="footer-row"><a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a></p>
     <p>Charles Ahuose Misheal · <a href="https://github.com/CharlesMisheal">GitHub</a> · <a href="https://linkedin.com/in/charlesmisheal">LinkedIn</a></p>
   </footer>
 </body>

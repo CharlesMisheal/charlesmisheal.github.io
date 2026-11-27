@@ -6,14 +6,23 @@
   <title>Faith and Technology Reflections | Charles Ahuose Misheal</title>
   <meta name="description" content="Faith and Technology Reflections by Charles Ahuose Misheal, updated every two weeks.">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#102a43">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Faith and Technology Reflections | Charles Ahuose Misheal">
+  <meta property="og:description" content="Faith and Technology Reflections by Charles Ahuose Misheal, updated every two weeks.">
+  <meta property="og:url" content="https://charlesmisheal.github.io/reflections.html">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="site.js" defer></script>
 </head>
-<body>
+<body id="top">
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header">
     <div class="header-inner">
       <a class="site-logo" href="index.html">Charles Ahuose Misheal</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"><span class="nav-toggle-icon" aria-hidden="true"></span>Menu</button>
       <nav class="site-nav" aria-label="Primary">
-        <ul>
+        <ul id="primary-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="resume.html">Résumé</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -23,11 +32,15 @@
           <li><a href="reflections.html" aria-current="page">Reflections</a></li>
           <li><a href="growth.html">Mentorship and Growth</a></li>
           <li><a href="review.html">Portfolio Review</a></li>
+          <li><a href="usability.html">Usability Report</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main id="main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="index.html">Home</a></li><li><a href="reflections.html#overview">Spiritual Progression Portfolio</a></li><li><span aria-current="page">Reflections</span></li></ol>
+    </nav>
     <p class="page-kicker">Journal</p>
     <h1>Faith and Technology Reflections</h1>
     <p class="lede">This page collects short reflections on how faith and technology meet in my studies and work. I add a new post every two weeks.</p>
@@ -45,6 +58,10 @@
     </section>
     <h2>Entries</h2>
     <ol class="entry-list">
+      <li>
+        <a href="index.html#video">Video: My development journey</a>
+        <p>IT 497 Week 4. A video walkthrough of my portfolio and a reflection on how my choices have shaped me spiritually and professionally, with a text version of the script.</p>
+      </li>
       <li>
         <a href="integration.html">Integration Reflection</a>
         <p>IT 497 Week 5. A mind map and reflection on integrating Christ's teachings into my personal and professional life, drawing on devotionals by President and Sister Kusch and Sister Neill F. Marriott, Elder Bednar's "Gather Together in One All Things in Christ," and the BYU–Idaho reading on embracing differences.</p>
@@ -68,6 +85,30 @@
     </ol>
   </main>
   <footer class="site-footer">
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <p class="footer-heading">Professional Portfolio</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Résumé</a></li>
+          <li><a href="resume.pdf">Résumé (PDF)</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="usability.html">Usability Report</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Spiritual Progression Portfolio</p>
+        <ul>
+          <li><a href="principles.html">Guiding Principles</a></li>
+          <li><a href="alignment.html">Faith and Competencies</a></li>
+          <li><a href="integration.html">Integration Reflection</a></li>
+          <li><a href="reflections.html">Reflections</a></li>
+          <li><a href="growth.html">Mentorship and Growth</a></li>
+          <li><a href="review.html">Portfolio Review</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p class="footer-row"><a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a></p>
     <p>Charles Ahuose Misheal · <a href="https://github.com/CharlesMisheal">GitHub</a> · <a href="https://linkedin.com/in/charlesmisheal">LinkedIn</a></p>
   </footer>
 </body>

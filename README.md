@@ -40,9 +40,10 @@ I study whether AI systems are reliable and trustworthy, especially whether lang
 - **Reflections:** Regular posts connecting faith and technology
 - **Mentorship and Growth:** My SMART goals and progress
 - **Portfolio Review:** A review of my spiritual portfolio with findings, enhancements and a finalization plan
+- **Usability Report:** Usability and accessibility testing of this site, with before and after results
 
 ## Built With
-Plain HTML and CSS, hosted on GitHub Pages.
+Plain HTML and CSS, with a small JavaScript file for the mobile menu and video player, hosted on GitHub Pages.
 
 ## Contact
 - GitHub: [@CharlesMisheal](https://github.com/CharlesMisheal)
