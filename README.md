@@ -33,10 +33,13 @@ I study whether AI systems are reliable and trustworthy, especially whether lang
 ## Site Pages
 - **Home:** Introduction, mission and skills
 - **Résumé:** My résumé, with a downloadable PDF
-- **Projects:** Three detailed project write-ups covering context, challenges, results, lessons learned and faith in practice
+- **Projects:** Four detailed project write-ups, including a refined IT 312 Metasploit report, covering context, challenges, results, ethics, lessons learned and faith in practice
 - **Guiding Principles:** The three principles that guide my spiritual and professional growth
+- **Faith and Competencies:** How my professional competencies align with my guiding principles and beliefs
+- **Integration Reflection:** A mind map of how I integrate faith and work, with warning signs and realignment strategies
 - **Reflections:** Regular posts connecting faith and technology
-- **Growth:** My goals and progress
+- **Mentorship and Growth:** My SMART goals and progress
+- **Portfolio Review:** A review of my spiritual portfolio with findings, enhancements and a finalization plan
 
 ## Built With
 Plain HTML and CSS, hosted on GitHub Pages.

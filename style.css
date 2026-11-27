@@ -648,3 +648,349 @@ p {
 .download-link {
   font-weight: 600;
 }
+
+/* Integration reflection: mind map */
+
+.mindmap {
+  --gap: 2rem;
+  margin: 1.5rem 0 2rem;
+  padding: 0;
+}
+
+.mindmap-grid {
+  display: grid;
+  gap: 1.1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "center"
+    "principles"
+    "practices"
+    "warnings"
+    "realign"
+    "ins1"
+    "ins2"
+    "ins3"
+    "ins4"
+    "time";
+  position: relative;
+}
+
+.mm-node {
+  position: relative;
+  padding: 0.9rem 1rem 0.75rem;
+  border: 2px solid var(--navy);
+  border-radius: 6px;
+  background: var(--paper);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.mm-node h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+  color: var(--navy);
+  letter-spacing: 0.02em;
+}
+
+.mm-node ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.mm-node li {
+  margin-bottom: 0.3rem;
+}
+
+.mm-node p {
+  margin: 0 0 0.4rem;
+}
+
+.mm-center {
+  grid-area: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: var(--navy);
+  color: var(--paper);
+  border-color: var(--navy);
+  padding: 1.25rem 1rem;
+}
+
+.mm-center .mm-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.mm-center p {
+  color: #d9e2ec;
+  margin: 0;
+}
+
+.mm-principles { grid-area: principles; }
+.mm-practices { grid-area: practices; }
+.mm-warnings { grid-area: warnings; border-color: #9c4221; background: #fffaf0; }
+.mm-warnings h3 { color: #7b341e; }
+.mm-realign { grid-area: realign; border-color: #276749; background: #f0fff4; }
+.mm-realign h3 { color: #22543d; }
+.mm-ins1 { grid-area: ins1; }
+.mm-ins2 { grid-area: ins2; }
+.mm-ins3 { grid-area: ins3; }
+.mm-ins4 { grid-area: ins4; }
+.mm-time { grid-area: time; background: var(--wash); }
+
+.mm-insight {
+  border-style: dashed;
+  border-color: var(--muted);
+  background: var(--wash);
+  font-size: 0.9rem;
+}
+
+.mm-insight h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.mm-principles ol {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.mm-cadence {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mm-cadence li {
+  margin: 0;
+  padding: 0.5rem 0.7rem;
+  background: var(--paper);
+  border-left: 4px solid var(--navy);
+}
+
+.mm-cadence strong {
+  display: block;
+  color: var(--navy);
+}
+
+/* Mobile: a vertical spine links every branch to the center */
+.mm-principles::before,
+.mm-practices::before,
+.mm-warnings::before,
+.mm-realign::before {
+  content: "";
+  position: absolute;
+  left: 1.5rem;
+  top: -1.2rem;
+  width: 3px;
+  height: 1.1rem;
+  background: var(--navy);
+}
+
+.mindmap figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+@media (min-width: 760px) {
+  .mindmap-grid {
+    gap: var(--gap);
+    grid-template-columns: 1fr 1.05fr 1fr;
+    grid-template-areas:
+      "ins1 principles ins2"
+      "practices center warnings"
+      "ins3 realign ins4"
+      "time time time";
+  }
+
+  .mm-principles::before,
+  .mm-practices::before,
+  .mm-warnings::before,
+  .mm-realign::before {
+    display: none;
+  }
+
+  .mm-principles::after,
+  .mm-realign::after,
+  .mm-practices::after,
+  .mm-warnings::after {
+    content: "";
+    position: absolute;
+    background: var(--navy);
+  }
+
+  .mm-principles::after {
+    left: calc(50% - 1.5px);
+    bottom: calc(-1 * var(--gap) - 2px);
+    width: 3px;
+    height: var(--gap);
+  }
+
+  .mm-realign::after {
+    left: calc(50% - 1.5px);
+    top: calc(-1 * var(--gap) - 2px);
+    width: 3px;
+    height: var(--gap);
+  }
+
+  .mm-practices::after {
+    top: calc(50% - 1.5px);
+    right: calc(-1 * var(--gap) - 2px);
+    height: 3px;
+    width: var(--gap);
+  }
+
+  .mm-warnings::after {
+    top: calc(50% - 1.5px);
+    left: calc(-1 * var(--gap) - 2px);
+    height: 3px;
+    width: var(--gap);
+  }
+
+  .mm-insight {
+    align-self: center;
+  }
+
+  .mm-cadence {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Wider layout for the mind map and review tables */
+main.wide {
+  max-width: 68rem;
+}
+
+main.wide .prose {
+  max-width: 52rem;
+}
+
+/* Review tables and status labels */
+
+.status {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.status-done { background: #c6f6d5; color: #22543d; }
+.status-planned { background: #feebc8; color: #7b341e; }
+.status-ongoing { background: #bee3f8; color: #2a4365; }
+
+.priority-high { font-weight: 700; color: #9b2c2c; }
+.priority-medium { font-weight: 700; color: #7b341e; }
+.priority-low { font-weight: 700; color: var(--muted); }
+
+.finding-list > li {
+  margin-bottom: 0.9rem;
+}
+
+.finding-id {
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.references {
+  padding-left: 0;
+  list-style: none;
+}
+
+.references li {
+  padding-left: 2.25rem;
+  text-indent: -2.25rem;
+  margin-bottom: 0.75rem;
+  overflow-wrap: anywhere;
+}
+
+.callout {
+  margin: 1.25rem 0;
+  padding: 0.9rem 1.1rem;
+  border-left: 4px solid var(--navy);
+  background: var(--wash);
+}
+
+.callout p:last-child {
+  margin-bottom: 0;
+}
+
+.page-links {
+  margin: 1.5rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+@media print {
+  main.wide { max-width: none; }
+
+  .mindmap-grid {
+    gap: 1.2rem;
+    grid-template-columns: 1fr 1.05fr 1fr;
+    grid-template-areas:
+      "ins1 principles ins2"
+      "practices center warnings"
+      "ins3 realign ins4"
+      "time time time";
+  }
+
+  .mm-node { font-size: 8.5pt; padding: 0.45rem 0.55rem; break-inside: avoid; }
+  .mm-node h3 { font-size: 9pt; }
+  .mm-center .mm-title { font-size: 13pt; }
+  .mm-center { background: var(--navy) !important; color: #fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .mm-principles::before, .mm-practices::before, .mm-warnings::before, .mm-realign::before { display: none; }
+  .mm-cadence { grid-template-columns: repeat(4, 1fr); }
+  .mindmap { break-inside: avoid; }
+  .align-table { font-size: 8.5pt; }
+  .align-table tr { break-inside: avoid; }
+  h2 { break-after: avoid; }
+}
+
+/* Compact menu on phones */
+@media (max-width: 640px) {
+  .header-inner {
+    padding: 0.7rem 0.9rem 0.6rem;
+    gap: 0.35rem;
+  }
+
+  .site-nav ul {
+    gap: 0;
+  }
+
+  .site-nav a {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.5rem;
+    min-height: 44px;
+  }
+}
+
+/* Compact menu on phones */
+@media (max-width: 640px) {
+  .header-inner {
+    padding: 0.7rem 0.9rem 0.6rem;
+    gap: 0.35rem;
+  }
+
+  .site-nav ul {
+    gap: 0;
+  }
+
+  .site-nav a {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.5rem;
+    min-height: 44px;
+  }
+}
